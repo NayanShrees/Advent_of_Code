@@ -46,7 +46,7 @@ void Part2(std::string file) {
     number += MapDigits(back);
     total += std::stoi(number);
   }
-  std::cout << "Day 2 - Part 1: " << total << std::endl;
+  std::cout << "Day 1 - Part 2: " << total << std::endl;
 }
 
 std::string MapDigits(std::string digit) {
