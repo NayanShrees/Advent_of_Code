@@ -7,6 +7,7 @@ project(${PROJECT} VERSION 1.0)
 
 set(SOURCE
     ${CMAKE_SOURCE_DIR}/src/days/day_1.cpp
+    ${CMAKE_SOURCE_DIR}/src/days/day_2.cpp
     ${CMAKE_SOURCE_DIR}/src/util.cpp
 )
 

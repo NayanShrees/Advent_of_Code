@@ -6,8 +6,8 @@
 
 namespace util {
 
-std::string ReadFile(int day, std::string filename);
-std::vector<std::string> split(std::string string, char delimiter = '\n');
+std::string ReadFile(int day, std::string filename = "");
+std::vector<std::string> Split(std::string string, char delimiter = '\n');
 
 }  // namespace util
 

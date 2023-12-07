@@ -9,7 +9,7 @@
 namespace day_1 {
 
 void Solve() {
-  std::string file = util::ReadFile(1, "day_1.txt");
+  std::string file = util::ReadFile(1);
   Part1(file);
   Part2(file);
 }
@@ -17,7 +17,7 @@ void Solve() {
 void Part1(std::string file) {
   std::regex regex("\\d");
   int total = 0;
-  for (auto &line : util::split(file)) {
+  for (auto &line : util::Split(file)) {
     std::smatch smatch;
     std::string number;
     std::regex_search(line, smatch, regex);
@@ -34,7 +34,7 @@ void Part2(std::string file) {
   std::regex front("one|two|three|four|five|six|seven|eight|nine|\\d");
   std::regex back("eno|owt|eerht|ruof|evif|xis|neves|thgie|enin|\\d");
   int total = 0;
-  for (auto &line : util::split(file)) {
+  for (auto &line : util::Split(file)) {
     std::smatch smatch;
     std::string number;
     std::regex_search(line, smatch, front);
